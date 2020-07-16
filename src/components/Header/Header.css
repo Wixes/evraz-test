@@ -1,0 +1,33 @@
+.header {
+    height: 75px;
+    border-bottom: 4px solid #B1B3B6;
+}
+
+.header__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 71px;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0 0 0 10%;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 410px) {
+    .tabs {
+        padding: 0;
+        margin: 0;
+    }
+    .tabs > .tab {
+        margin: 0 10px;
+        padding: 0;
+    }
+}

@@ -1,0 +1,224 @@
+.rec-table {
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-size: 18px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    width: 100%;
+    margin: 0 0 16px;
+    box-shadow: 0px 1px 4px rgba(63, 63, 68, 0.15), 0px 0px 0px rgba(63, 63, 68, 0.05);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.rec-table__header {
+    padding: .5em 0;
+}
+
+.rec-table__header > .rec-table__cell {
+    color: #4E5251;
+}
+
+.rec-table__row {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.rec-table__row > .rec-table__cell:nth-child(1) > .rec-table__value {
+    font-family: "Roboto";
+    font-weight: 500;
+    text-align: left;
+}
+
+.rec-table__row:nth-child(1) {
+    font-weight: bold;
+    background-color:  #f1f4f6;
+}
+
+.rec-table__row:nth-of-type(even) {
+    background-color: #f9f9fa;
+}
+
+.rec-table__cell {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 .2em;
+    padding: .2em 0;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+}
+
+.rec-table__cell:first-child {
+    flex-grow: 3;
+}
+
+.rec-table__value {
+    padding: .5em .8em;
+    width: 100%;
+    color: #8B8E8D;
+    text-align: center;
+}
+
+.rec-table__cell--nasos {
+    font-family: "Roboto";
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 2;
+    margin: 0 .4em;
+}
+
+.rec-table__cell--nasos > .rec-table__value {
+    color: #4E5251;
+}
+
+.rec-table__cell--options {
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.rec-table__value:nth-child(2) {
+    padding: .2em .8em .5em;
+}
+
+.rec-table__recommend {
+    color: #8B8E8D;
+}
+
+.rec-table__text {
+    color: #4E5251;
+    font-weight: 500;
+}
+
+.rec-table__value--red {
+    color: red;
+}
+
+.rec-table__value--emergency-black {
+    color: #4E5251;
+    font-weight: 500;
+}
+
+.rec-table__value--emergency {
+    font-weight: 500;
+    background-color: rgba(241, 74, 85, 0.12);
+}
+
+.rec-table__value--good {
+    position: relative;
+    color: #4E5251;
+}
+
+.rec-table__value--good::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #099A71;
+}
+
+.rec-table__value--bad {
+    position: relative;
+    background-color: rgba(241, 74, 85, 0.12);
+    color: #D90F2D;
+    font-weight: 500;
+}
+
+.rec-table__value--bad::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #F14A55;
+}
+
+.rec-table__cell--important {
+    background-color: rgba(184, 224, 252, 0.35);
+}
+
+.rec-table__options {
+    background-color: #FFFFFF;
+    padding: .4em .2em;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    color: #4E5251;
+    appearance: none;
+}
+
+.rec-table__options--label {
+    position: relative;
+}
+
+.rec-table__options--label::after {
+    content: '';
+    position: absolute;
+    background-color: #8B8E8D;
+    transform: rotate(45deg);
+    right: 5px;
+    top: 47%;
+    width: 5px;
+    height: 2px;
+}
+
+.rec-table__options--label::before {
+    content: '';
+    position: absolute;
+    background-color: #8B8E8D;
+    transform: rotate(-45deg);
+    right: 3px;
+    top: 47%;
+    width: 5px;
+    height: 2px;
+}
+
+.rec-table__footer {
+    font-family: "Roboto";
+    font-weight: 500;
+    justify-content: space-between;
+    background-color: #F1F4F6;
+    padding: .7em 1em;
+}
+
+.rec-table__clock {
+    margin: 0 3em 0 0;
+}
+
+.rec-table__clock > div {
+    display: inline-block;
+}
+
+.rec-table__clock > .clock {
+    margin-right: 1.5em;
+}
+
+.rec-table__history {
+    align-self: stretch;
+}
+
+@media screen and (max-width: 1630px) {
+    .rec-table {
+        font-size: 16px;
+    }
+
+    .rec-table__value {
+        padding: .5em .2em;
+    }
+
+    .rec-table__value:nth-child(2) {
+        padding: .2em .2em;
+    }
+}

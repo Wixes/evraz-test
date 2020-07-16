@@ -1,0 +1,116 @@
+.ore {
+    font-family: "Roboto";
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 48%;
+    padding: 24px 24px 16px;
+    box-shadow: 0px 1px 4px rgba(63, 63, 68, 0.15), 0px 0px 0px rgba(63, 63, 68, 0.05);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.information {
+    font-size: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.information__value {
+    font-size: 24px;
+    margin: 15px 0 0 0;
+}
+
+.prediction {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.prediction__result {
+    font-size: 30px;
+    width: 100%;  
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #F14A55;
+}
+
+.prediction__plan {
+    font-size: 16px;
+    color: #F14A55; 
+}
+
+.plan {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.plan__information {
+    font-size: 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.plan__text {
+    color: #F14A55;
+}
+
+.progress {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #D8D8D8;
+    height: 5px;
+}
+
+.progress__completed {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    text-align: right;
+    height: 5px;
+    width: 70%;
+    background-color: #4E5251;
+}
+
+.progress__completed::before {
+    content: '31 900';
+    position: absolute;
+    right: -25px;
+    bottom: 10px;
+}
+
+.progress__completed::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 2px;
+    height: 15px;
+    background-color: #4E5251;
+}
+
+.progress__value {
+    margin: 0 0 1em;
+}
+
+.plan__text {
+    position: relative;
+}
+
+.plan__text::before {
+    position: absolute;
+    content: '';
+    width: 0; 
+    height: 0; 
+    top: 5px;
+    left: -20px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #F14A55;
+}
